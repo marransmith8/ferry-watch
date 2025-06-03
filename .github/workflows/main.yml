@@ -1,0 +1,39 @@
+name: Ferry Status Scraper
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'  # runs every 10 minutes
+  workflow_dispatch:
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install selenium pyyaml webdriver-manager zoneinfo
+
+      - name: Install Google Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Run ferry status scraper script
+        run: |
+          python calmac-ferry-watch-scrapper.py
+
+      - name: Upload output JSON as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ferry-status-output
+          path: output/calmac-ferry-status.json
