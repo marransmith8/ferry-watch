@@ -33,7 +33,7 @@ jobs:
           python calmac-ferry-watch-scrapper.py
 
       - name: Upload output JSON as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ferry-status-output
           path: output/calmac-ferry-status.json
