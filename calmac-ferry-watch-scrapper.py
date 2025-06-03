@@ -4,16 +4,21 @@
 import yaml
 import json
 import time
+from pathlib import Path
 from datetime import datetime
 from zoneinfo import ZoneInfo
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import TimeoutException
+from webdriver_manager.chrome import ChromeDriverManager  # NEW
 
-CHROMEDRIVER_PATH = '/usr/bin/chromedriver'
-YAML_FILE_PATH = '/home/masmith8/ferry_project/dev/ferry_routes_master_named.yaml'
-OUTPUT_PATH = '/home/masmith8/ferry_project/dev/output/ferrystatus.json'
+# Base directory (folder where this script is located)
+CODE_DIR = Path(__file__).resolve().parent
+
+# Local paths
+YAML_FILE_PATH = CODE_DIR / 'input' / 'calmac-routes.yaml'
+OUTPUT_PATH = CODE_DIR / 'output' / 'calmac-ferry-status.json'
 
 local_time = datetime.now(ZoneInfo('Europe/London'))
 timestamp_str = local_time.strftime("%H:%M:%S %d-%m-%Y")
@@ -53,7 +58,8 @@ def check_ferry_status():
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
 
-    service = Service(CHROMEDRIVER_PATH)
+    # Use webdriver-manager to automatically get ChromeDriver
+    service = Service(ChromeDriverManager().install())
     driver = None
     log_entry = {
         "timestamp": timestamp_str,
@@ -61,13 +67,14 @@ def check_ferry_status():
         "execution_time_seconds": None
     }
 
-    results_summary = []  # For end-of-script display
+    results_summary = []
 
     try:
         ROUTES = load_routes_from_yaml(YAML_FILE_PATH)
-
         print("[INFO] Launching headless Chrome browser")
         driver = webdriver.Chrome(service=service, options=options)
+
+        max_name_length = max(len(r["Name"]) for r in ROUTES)
 
         for route in ROUTES:
             print(f"[INFO] Checking route: {route['Name']}")
@@ -105,12 +112,7 @@ def check_ferry_status():
 
             status_color = SEARCH_TERMS.get(status_text, "Unknown")
 
-            # Store result summary for later display
-            # Calculate max route name length once (move this to the top of check_ferry_status)
-            max_name_length = max(len(r["Name"]) for r in ROUTES)
-
-            # Later inside the loop, format each result line
-            name_with_dashes = f"{route['Name']} ".ljust(max_name_length+2, '-')
+            name_with_dashes = f"{route['Name']} ".ljust(max_name_length + 2, '-')
             result_line = f"[RESULT] {route['ID']:>3}: {name_with_dashes} {status_text}"
             results_summary.append(result_line)
 
@@ -160,7 +162,6 @@ def check_ferry_status():
     except Exception as write_error:
         print(f"[ERROR] Failed to write output: {write_error}")
 
-    # Print all collected results at the end
     print("\n[RESULT] Route Status Results:")
     for result in results_summary:
         print(result)

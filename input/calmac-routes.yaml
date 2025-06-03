@@ -46,7 +46,7 @@ Routes:
     Region: "Outer Hebrides"
     Operator: "Caledonian MacBrayne"
     Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/300"
-    True: "31/05/2025
+    True: "31/05/2025"
 
   - ID: 107
     Name: "Gallanach (GB) - Kerrera (Kerrera)"
