@@ -1,0 +1,210 @@
+Routes:
+  - ID: 100
+    Name: "Ardmhor (Barra) - Eriskay (Eriskay)"
+    Region: "Outer Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/080"
+    True: "31/05/2025"
+
+  - ID: 101
+    Name: "Ardrossan (GB) - Brodick (Arran)"
+    Region: "Firth of Clyde"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/003"
+    True: "31/05/2025"
+
+  - ID: 102
+    Name: "Berneray (Berneray) - Leverburgh (Lewis & Harris)"
+    Region: "Outer Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/065"
+    True: "31/05/2025"
+
+  - ID: 103
+    Name: "Claonaig/Tarbert (Loch Fyne) (GB) - Lochranza (Arran)"
+    Region: "Firth of Clyde"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/004"
+    True: "31/05/2025"
+
+  - ID: 104
+    Name: "Colintraive (GB) - Rhubodach (Bute)"
+    Region: "Firth of Clyde"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/006"
+    True: "31/05/2025"
+
+  - ID: 105
+    Name: "Fionnphort (Mull) - Iona (Iona)"
+    Region: "Inner Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/056"
+    True: "31/05/2025"
+
+  - ID: 106
+    Name: "Freight Ullapool (GB) - Stornoway (Lewis & Harris))"
+    Region: "Outer Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/300"
+    True: "31/05/2025
+
+  - ID: 107
+    Name: "Gallanach (GB) - Kerrera (Kerrera)"
+    Region: "Inner Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/043"
+    True: "31/05/2025"
+
+  - ID: 108
+    Name: "Gourock (GB) - Dunoon (GB)"
+    Region: "Firth of Clyde"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/001"
+    True: "31/05/2025"
+
+  - ID: 109
+    Name: "Gourock (GB) - Kilcreggan (GB)"
+    Region: "Firth of Clyde"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/011"
+    True: "31/05/2025"
+
+  - ID: 110
+    Name: "Kennacraig (GB) - Port Askaig (Islay) - Port Ellen (Islay)"
+    Region: "Southern Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/030"
+    True: "31/05/2025"
+
+  - ID: 111
+    Name: "Largs (GB) - Cumbrae Slip (Great Cumbrae)"
+    Region: "Firth of Clyde"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/005"
+    True: "31/05/2025"
+
+  - ID: 112
+    Name: "Lochaline (GB) - Fishnish (Mull)"
+    Region: "Inner Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/036"
+    True: "31/05/2025"
+
+  - ID: 113
+    Name: "Mallaig (GB) - Armadale (Skye)"
+    Region: "Skye, Raasay and the Small Isles"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/033"
+    True: "31/05/2025"
+
+  - ID: 114
+    Name: "Mallaig (GB) - Lochboisdale (South Uist) - Oban (GB)"
+    Region: "Outer Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/038"
+    True: "31/05/2025"
+
+  - ID: 115
+    Name: "Mallaig (GB) - Eigg (Eigg) - Muck (Muck) - Rum (Rum) - Canna (Canna)"
+    Region: "Skye, Raasay and the Small Isles"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/051"
+    True: "31/05/2025"
+
+  - ID: 116
+    Name: "Oban (GB) - Craignure (Mull)"
+    Region: "Inner Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/031"
+    True: "31/05/2025"
+
+  - ID: 117
+    Name: "Oban (GB) - Castlebay (Barra)"
+    Region: "Outer Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/032"
+    True: "31/05/2025"
+
+  - ID: 118
+    Name: "Oban (GB) - Coll (Coll) - Tiree (Tiree)"
+    Region: "Inner Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/052"
+    True: "31/05/2025"
+
+  - ID: 119
+    Name: "Oban (GB) - Colonsay (Colonsay) - Port Askaig (Islay) - Kennacraig (GB)"
+    Region: "Southern Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/053"
+    True: "31/05/2025"
+
+  - ID: 120
+    Name: "Oban (GB) - Lismore (Lismore)"
+    Region: "Inner Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/055"
+    True: "31/05/2025"
+
+  - ID: 121
+    Name: "Sconser (Skye) - Raasay (Raasay)"
+    Region: "Skye, Raasay and the Small Isles"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/061"
+    True: "31/05/2025"
+
+  - ID: 122
+    Name: "Tarbert (Loch Fyne) (GB) - Portavadie (GB)"
+    Region: "Firth of Clyde"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/007"
+    True: "31/05/2025"
+
+  - ID: 123
+    Name: "Tayinloan (GB) - Gigha (Gigha)"
+    Region: "Southern Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/060"
+    True: "31/05/2025"
+
+  - ID: 124
+    Name: "Tobermory (Mull) - Kilchoan (GB)"
+    Region: "Inner Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/054"
+    True: "01/05/2025"
+
+  - ID: 125
+    Name: "Troon (GB) - Brodick (Arran)"
+    Region: "Firth of Clyde"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/301"
+    True: "01/06/2025"
+
+  - ID: 126
+    Name: "Uig (Skye) - Lochmaddy (North Uist)"
+    Region: "Outer Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/022"
+    True: "01/06/2025"
+
+  - ID: 127
+    Name: "Uig (Skye) - Tarbert (Lewis & Harris))"
+    Region: "Outer Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/034"
+    True: "01/06/2025"
+
+  - ID: 128
+    Name: "Ullapool (GB) - Stornoway (Lewis & Harris)"
+    Region: "Outer Hebrides"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/035"
+    True: "01/06/2025"
+
+  - ID: 129
+    Name: "Wemyss Bay (GB) - Rothesay (Bute)"
+    Region: "Firth of Clyde"
+    Operator: "Caledonian MacBrayne"
+    Status_URL: "https://www.calmac.co.uk/en-gb/service-status/#/service-status/002"
+    True: "01/06/2025"
