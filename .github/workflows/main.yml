@@ -32,14 +32,14 @@ jobs:
         run: |
           python calmac-ferry-watch-scrapper.py
 
-      - name: Prepare output for GitHub Pages
+      - name: Commit updated JSON file
         run: |
-          mkdir -p public
-          cp output/calmac-ferry-status.json public/
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/calmac-ferry-status.json
+          git commit -m "Update ferry status JSON [skip ci]" || echo "No changes to commit"
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages
+      - name: Push changes back to repo
+        run: git push origin HEAD:main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
