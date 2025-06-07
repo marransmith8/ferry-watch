@@ -32,8 +32,14 @@ jobs:
         run: |
           python calmac-ferry-watch-scrapper.py
 
-      - name: Upload output JSON as artifact
-        uses: actions/upload-artifact@v4
+      - name: Prepare output for GitHub Pages
+        run: |
+          mkdir -p public
+          cp output/calmac-ferry-status.json public/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          name: ferry-status-output
-          path: output/calmac-ferry-status.json
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
